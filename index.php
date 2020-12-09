@@ -81,3 +81,56 @@ $rs['instagram'] = "url_insta";
 
 echo $rs['instagram'];
 ?>
+
+
+
+
+<h2>Conditions : </h2>
+<?php
+  // Exercice 1 :
+  // Initialisation de la note
+  $note = 15;
+
+  if ($note < 10) {
+    echo "Tu n'as pas la moyenne";
+    
+  } elseif($note == 10) {
+    echo "Tu as la moyenne";
+    
+  } else {
+    echo "Tu as plus de la moyenne";
+  }
+  echo "<hr>";
+
+
+
+
+  // Exercice 2 :
+  // Initialisation de l'action
+  $action = 2;
+  if ($action == 1) {
+    echo "J'attaque";
+    
+  } elseif ($action == 2) {
+    echo "je défends"; 
+    
+  } elseif ($action == 3) {
+    echo "je ne fais rien";
+    
+  } else {
+   echo "Action inconnue"; 
+  }
+  echo "<hr>";
+
+?>
+
+
+
+
+
+
+
+
+
+
+
