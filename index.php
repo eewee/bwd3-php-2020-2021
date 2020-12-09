@@ -87,7 +87,8 @@ echo $rs['instagram'];
 
 <h2>Conditions : </h2>
 <?php
-  // Exercice 1 :
+  echo "<h3>Exercice 1 :</h3>";
+
   // Initialisation de la note
   $note = 15;
 
@@ -105,9 +106,11 @@ echo $rs['instagram'];
 
 
 
-  // Exercice 2 :
+  echo "<h3>Exercice 2 :</h3>";
+
   // Initialisation de l'action
   $action = 2;
+
   if ($action == 1) {
     echo "J'attaque";
     
@@ -122,9 +125,67 @@ echo $rs['instagram'];
   }
   echo "<hr>";
 
+
+
+
+  $action = 3;
+  switch($action) {
+    case 1 :
+      echo "J'attaque";
+      break;
+    
+    case 2 :
+      echo "Je défends";
+      break;
+
+    case 3 :
+      echo "Je ne fais rien";
+      break;
+      
+    default;
+      echo "Aucune \"toto\" action"; // Aucune "toto" action
+  }
+  echo "<hr>";
 ?>
 
 
+
+
+<h2>Boucle : </h2>
+<?php
+// Initialiser
+$company = [];
+
+// Remplir
+$company["societe"] = "Ma société";
+$company["rueeeeeeeeee"] = "2 Lorem ipsum";
+$company["cp"] = 17000;
+$company["ville"] = "LA ROCHELLE";
+$company["tel"] = "+331 22 33 44 55";
+
+// FOREACH
+foreach ($company as $clef => $valeur) {
+  echo $clef." : ".$valeur."<br>";
+}
+echo "<hr>";
+
+
+
+
+// FOR
+// Remplir
+$company2 = [];
+$company2[] = "Ma société";
+$company2[] = "2 Lorem ipsum";
+$company2[] = 17000;
+$company2[] = "LA ROCHELLE";
+$company2[] = "+331 22 33 44 55";
+
+//for (debut; fin; incrementation) {
+for ($i=0; $i<count($company2); $i++) {
+  echo $company2[$i]."<br>";
+}
+echo "<hr>";
 
 
 
